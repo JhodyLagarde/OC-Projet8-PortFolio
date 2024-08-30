@@ -4,12 +4,12 @@
   -moz-osx-font-smoothing: grayscale;
   background-color: #2c2c2c;
   color: #f5f5f5;
-  position: inherit;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 :root body {
   height: 100%;
-  margin: auto;
+  flex-direction: column;
 }
 :root a {
   color: inherit;
@@ -70,6 +70,7 @@
 
 .nav2 {
   position: fixed;
+  z-index: 1;
   display: flex;
   top: 35%;
   left: 1.875rem;
@@ -84,7 +85,7 @@
   padding: 8px 7px;
   gap: 32px;
 }
-.nav2__hook ul {
+.nav2__hook a {
   padding: 0;
   margin: 0;
   background-color: #2c2c2c;
@@ -92,64 +93,140 @@
   padding: 10px;
   text-align: center;
 }
-.nav2__hook ul i {
+.nav2__hook a:hover {
+  background-color: #707070;
+}
+.nav2__hook a i {
   font-size: 0.938rem;
 }
 
-.main-content-container {
-  scroll-snap-type: y mandatory;
+.main-content-container section {
+  scroll-snap-align: start;
 }
 
-.about {
-  scroll-snap-align: center;
-  height: 100vh;
+.about-section {
+  height: 100svh;
+  align-content: center;
 }
-.about img {
+.about-section__container {
+  display: flex;
+  height: 28.125rem;
+}
+.about-section__container .profil-picture {
+  position: relative;
+  width: 18.75rem;
+  top: -50px;
+  left: 150px;
+  z-index: 1;
+}
+.about-section__container .profil-picture__img {
   background-color: #f5f5f5;
+  box-shadow: 5px 5px 10px #2c2c2c;
   border-radius: 5px;
   padding: 3rem;
   height: 12.625rem;
   width: 12.625rem;
 }
-.about .description {
+.about-section__container .description {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  height: 60%;
+  padding: 1rem 5rem 5rem 5rem;
   background-color: #f5f5f5;
   border-radius: 5px;
   color: #2c2c2c;
   width: 60%;
+  bottom: -100px;
+}
+.about-section__container .description h1 {
+  width: 75%;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
 }
 
-.project {
-  scroll-snap-align: center;
-  height: 100vh;
-}
-
-.skills {
-  scroll-snap-align: center;
-  height: 100vh;
+.skills-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
   background-color: #f5f5f5;
   color: #2c2c2c;
 }
-.skills .skills__container img {
+.skills-section .skills h2 {
+  margin-bottom: 10rem;
+  text-align: center;
+}
+.skills-section .skills .skills__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 60px;
+  width: 80%;
+}
+.skills-section .skills .skills__container__1 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.skills-section .skills .skills__container__1 div {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.skills-section .skills .skills__container__2 {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.skills-section .skills .skills__container__2 div {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+.skills-section .skills .skills__container img {
   background-color: #2c2c2c;
   border-radius: 100px;
   padding: 10px;
   height: 90px;
   width: 90px;
+  transition: all 1s;
+}
+.skills-section .skills .skills__container img:hover {
+  background-color: #707070;
 }
 
-.contact {
-  scroll-snap-align: center;
-  height: 90vh;
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100svh;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95svh;
   background-color: #f5f5f5;
   color: #2c2c2c;
 }
-.contact form {
+.contact-section form {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+}
+.contact-section form input,
+.contact-section form textarea {
+  background-color: #EEEEEE;
+  border: none;
+  border-radius: 20px;
 }
 
 footer p {
-  height: 10vh;
   align-content: center;
   text-align: center;
 }/*# sourceMappingURL=index.css.map */

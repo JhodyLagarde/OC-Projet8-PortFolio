@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <!--CSS et JS-->
-    <link rel="stylesheet" href="./assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/index.scss">
 </head>
 <body>
     <header>
@@ -37,63 +37,60 @@
     <main>
         <aside>
             <nav class="nav2"> 
-                <li class="nav2__hook">
-                    <ul>
-                        <a href="#about"><i class="fa-solid fa-user"></i></a>
-                    </ul>
-                    <ul>
-                        <a href="#skills"><i class="fa-solid fa-book-open"></i></a>
-                    </ul>
-                    <ul>
-                        <a href="#project"><i class="fa-solid fa-diagram-project"></i></a>
-                    </ul>
-                    <ul>
-                        <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
-                    </ul>
-                </li>
+                <div class="nav2__hook">
+                    <a href="#about"><i class="fa-solid fa-user"></i></a>
+                    <a href="#skills"><i class="fa-solid fa-book-open"></i></a>
+                    <a href="#project"><i class="fa-solid fa-diagram-project"></i></a>
+                    <a href="#contact"><i class="fa-solid fa-envelope"></i></a>  
+                </div>
             </nav>  
         </aside>
-        
         <div class="main-content-container" dir="ltr">
-            <section id="about" class="about" >
-                <img class="profil-picture" src="./assets/images/profile-simple-svgrepo-com.svg" alt="Placeholder photo Jhody Lagarde">
-                <div class="description">
-                    <h1>Jhody Lagarde - Développeur web junior</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim perferendis alias quidem aut, laborum, nam facilis consequuntur ab odit illum harum, rerum veniam nostrum vitae accusamus quibusdam debitis corrupti beatae.</p>
-                </div>
-            </section>
-
-            <section id="skills" class="skills">
-                <h2>Mes compétences</h2>
-                <div class="skills__container">
-                    <div class="skills__container__1">
-                        <div>
-                            <img src="./assets/images/icons8-html5.svg" alt="icon html5" class="icon-html">
-                            <img src="./assets/images/icons8-css3.svg" alt="icon css3" class="icon-css">
-                        </div>
-                        <div>
-                            <img src="./assets/images/icons8-javascript.svg" alt="icon javascript" class="icon-js">
-                            <img src="./assets/images/react-2.svg" alt="icon react" class="icon-react">
-                        </div>
+            <section id="about" class="about-section" >
+                <div class="about-section__container">
+                    <div class="profil-picture">
+                        <img class="profil-picture__img" src="./assets/images/profile-simple-svgrepo-com.svg" alt="Placeholder photo Jhody Lagarde">
                     </div>
-                    <div class="skills__container__2">
-                        <div>
-                            <img src="./assets/images/icons8-sass.svg" alt="icon sass" class="icon-sass">
-                            <img src="./assets/images/mongodb-icon-1.svg" alt="icon mongodb" class="icon-mongodb">
-                        </div>
-                        <div>
-                            <img src="./assets/images/node-js.svg" alt="icon node" class="icon-node">
-                            <img src="./assets/images/express-icon.svg" alt="icon express" class="icon-express">
-                        </div>
+                    <div class="description">
+                        <h1>Jhody Lagarde - Développeur web junior</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim perferendis alias quidem aut, laborum, nam facilis consequuntur ab odit illum harum, rerum veniam nostrum vitae accusamus quibusdam debitis corrupti beatae.</p>
                     </div>
                 </div>
             </section>
 
-            <section id="project" class="project">
+            <section id="skills" class="skills-section">
+                <div class="skills">
+                    <h2>Mes compétences</h2>
+                    <div class="skills__container">
+                        <div class="skills__container__1">
+                            <div>
+                                <img src="./assets/images/icons8-html5.svg" alt="icon html5" class="icon-html">
+                                <img src="./assets/images/icons8-css3.svg" alt="icon css3" class="icon-css">
+                            </div>
+                            <div>
+                                <img src="./assets/images/icons8-javascript.svg" alt="icon javascript" class="icon-js">
+                                <img src="./assets/images/react-2.svg" alt="icon react" class="icon-react">
+                            </div>
+                        </div>
+                        <div class="skills__container__2">
+                            <div>
+                                <img src="./assets/images/icons8-sass.svg" alt="icon sass" class="icon-sass">
+                                <img src="./assets/images/mongodb-icon-1.svg" alt="icon mongodb" class="icon-mongodb">
+                            </div>
+                            <div>
+                                <img src="./assets/images/node-js.svg" alt="icon node" class="icon-node">
+                                <img src="./assets/images/express-icon.svg" alt="icon express" class="icon-express">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="project" class="project-section">
                 <h2>Mes projets</h2>
             </section>
 
-            <section id="contact" class="contact">
+            <section id="contact" class="contact-section">
                 <h2>Me contacter</h2>
                 <p><span>*</span> champs obligatoires</p>
                 <form action="#" method="post">
@@ -104,7 +101,7 @@
                     <label for="objet">Objet</label>
                     <input type="text" name="objet" id="objet">
                     <label for="message">Message<span>*</span></label>
-                    <textarea name="message" id="message" cols="50" rows="10"></textarea>
+                    <textarea name="message" id="message" ></textarea>
                     <input type="submit" id="submit" value="Envoyer">
                 </form>
             </section>

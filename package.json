@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "sass assets/styles/index/style.scss assets/styles/index.css --watch"
+    "compile": "sass assets/styles/index/style.scss assets/styles/index.css --watch",
+    "dev": "vite",
+    "build": "vite build", 
+    "preview": "vite preview" 
   },
   "keywords": [],
   "author": "",
@@ -11,5 +14,8 @@
   "description": "",
   "dependencies": {
     "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
   }
 }

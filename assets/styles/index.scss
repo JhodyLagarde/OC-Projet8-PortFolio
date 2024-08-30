@@ -6,12 +6,12 @@
     -moz-osx-font-smoothing: grayscale;
     background-color: $mainColor;
     color: $secondColor;
-    position: inherit;
     scroll-behavior: smooth;
-
+    scroll-snap-type: y mandatory;
+    
     body {
         height : 100%;
-        margin: auto;
+        flex-direction: column;
     }
 
     a {
@@ -88,6 +88,7 @@
 
 .nav2{
     position: fixed;
+    z-index: 1;
     display: flex;
     top: 35%;
     left: 1.875rem;
@@ -102,13 +103,17 @@
         padding: 8px 7px;
         gap: 32px;
 
-        ul{ 
+        a{ 
             padding: 0;
             margin: 0;
             background-color: $mainColor;
             border-radius: 32px;
             padding: 10px;
             text-align: center;
+
+            &:hover{
+                background-color: $activeColor;
+            }
 
             i{
                 font-size: 0.938rem;
@@ -118,67 +123,150 @@
 }
 
 .main-content-container{
-    scroll-snap-type: y mandatory;
-}
-
-.about{
-    scroll-snap-align: center;
-    height: 100vh;
-    // padding: 10rem 8.875rem;
-
-    img {
-        background-color: $secondColor;
-        border-radius: 5px;
-        padding: 3rem;
-        height: 12.625rem;
-        width: 12.625rem;
-    }
-
-    .description{
-        background-color: $secondColor;
-        border-radius: 5px;
-        color: $mainColor;
-        width: 60%;
+    section{
+        scroll-snap-align: start;
     }
 }
 
-.project{
-    scroll-snap-align: center;
-    height: 100vh;
-}
+.about-section{
+    height: 100svh;
+    align-content: center;
 
-.skills {
-    scroll-snap-align: center;
-    height: 100vh;
-    background-color: $secondColor;
-    color: $mainColor;
-
-    .skills__container {
-
-        img {
-            background-color: $mainColor;
-            border-radius: 100px;
-            padding: 10px;
-            height: 90px;
-            width: 90px;
+    &__container{
+        display: flex;
+        height: 28.125rem;
+        .profil-picture{
+            position: relative;
+            width: 18.75rem;
+            top: -50px;
+            left: 150px;
+            z-index: 1;
+            &__img {
+                background-color: $secondColor;
+                box-shadow: 5px 5px 10px  $mainColor;
+                border-radius: 5px;
+                padding: 3rem;
+                height: 12.625rem;
+                width: 12.625rem;
+            }
+        }
+        .description{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            position: relative;
+            height: 60%;
+            padding: 1rem 5rem 5rem 5rem;
+            background-color: $secondColor;
+            border-radius: 5px;
+            color: $mainColor;
+            width: 60%;
+            bottom: -100px;
+            h1{
+                width: 75%;
+                margin-top: 2rem;
+                margin-bottom: 7rem;
+            }
         }
     }
 }
 
-.contact {
-    scroll-snap-align: center;
-    height: 90vh;
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+    background-color: $secondColor;
+    color: $mainColor;
+
+    .skills{
+        
+
+        h2{
+            margin-bottom: 10rem;
+            text-align: center;
+        }
+        .skills__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 60px;
+            width: 80%;
+
+            &__1{
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 100px;
+                }
+            }
+
+            &__2{
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 100px;
+                }
+            }
+
+            img{
+                background-color: $mainColor;
+                border-radius: 100px;
+                padding: 10px;
+                height: 90px;
+                width: 90px;
+                transition: all 1s;
+
+                &:hover{
+                    background-color: $activeColor;
+                }
+            }
+        }
+    }
+}
+
+.project-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95svh;
     background-color: $secondColor;
     color: $mainColor;
 
     form {
         display: flex;
         flex-direction: column;
+        gap: 15px;
+        
+        input,
+        textarea{
+            background-color: #EEEEEE;
+            border: none;
+            border-radius: 20px;
+        }
+
     }
 }
 
-footer p{
-    height: 10vh;
-    align-content: center;
-    text-align: center;
+footer {
+    p{
+        align-content: center;
+        text-align: center;
+    }
 }
