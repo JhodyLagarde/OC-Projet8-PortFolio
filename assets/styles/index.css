@@ -2,12 +2,11 @@
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #2c2c2c;
   color: #f5f5f5;
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 :root body {
+  margin: auto;
   height: 100%;
   flex-direction: column;
 }
@@ -30,10 +29,13 @@
 }
 
 .header_wrapper {
-  width: 95%;
+  width: 85%;
   position: fixed;
+  z-index: 999;
+  mix-blend-mode: difference;
   top: 1.875rem;
-  left: 3.125rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header_wrapper div {
   display: flex;
@@ -70,10 +72,10 @@
 
 .nav2 {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   display: flex;
   top: 35%;
-  left: 1.875rem;
+  left: 2%;
 }
 .nav2__hook {
   display: flex;
@@ -100,26 +102,24 @@
   font-size: 0.938rem;
 }
 
-.main-content-container section {
-  scroll-snap-align: start;
-}
-
 .about-section {
   height: 100svh;
-  align-content: center;
+  width: 100%;
+  background-color: #2c2c2c;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 .about-section__container {
+  height: 100%;
+  position: relative;
   display: flex;
-  height: 28.125rem;
+  align-items: center;
+  justify-content: center;
 }
 .about-section__container .profil-picture {
-  position: relative;
-  width: 18.75rem;
-  top: -50px;
-  left: 150px;
+  position: absolute;
   z-index: 1;
-}
-.about-section__container .profil-picture__img {
+  width: 18.75rem;
   background-color: #f5f5f5;
   box-shadow: 5px 5px 10px #2c2c2c;
   border-radius: 5px;
@@ -131,14 +131,13 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  position: relative;
-  height: 60%;
-  padding: 1rem 5rem 5rem 5rem;
+  padding: 1rem;
   background-color: #f5f5f5;
   border-radius: 5px;
   color: #2c2c2c;
+  padding: 2rem;
   width: 60%;
-  bottom: -100px;
+  height: 20.625rem;
 }
 .about-section__container .description h1 {
   width: 75%;
@@ -147,60 +146,75 @@
 }
 
 .skills-section {
+  height: 100svh;
+  background-color: #2c2c2c;
+}
+.skills-section .skills {
+  color: #2c2c2c;
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100svh;
-  background-color: #f5f5f5;
-  color: #2c2c2c;
 }
 .skills-section .skills h2 {
+  margin: 0;
   margin-bottom: 10rem;
   text-align: center;
 }
-.skills-section .skills .skills__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 60px;
-  width: 80%;
+.skills-section .skills .scroller {
+  max-width: 60%;
+  outline: 2px solid red;
 }
-.skills-section .skills .skills__container__1 {
+.skills-section .skills .scroller__inner {
   display: flex;
-  flex-direction: row;
-  gap: 100px;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding-block: 1rem;
 }
-.skills-section .skills .skills__container__1 div {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
+.skills-section .skills .scroller .skills-list {
+  margin: 0;
+  list-style: none;
+  padding-inline: 0;
 }
-.skills-section .skills .skills__container__2 {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-}
-.skills-section .skills .skills__container__2 div {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
-}
-.skills-section .skills .skills__container img {
+.skills-section .skills .scroller .skills-list img {
   background-color: #2c2c2c;
+  box-shadow: 0 0.5rem 1rem -0.25rem #2c2c2c;
   border-radius: 100px;
   padding: 10px;
   height: 90px;
   width: 90px;
   transition: all 1s;
 }
-.skills-section .skills .skills__container img:hover {
+.skills-section .skills .scroller .skills-list img:hover {
   background-color: #707070;
 }
 
+.scroller[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated=true] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-100%);
+  }
+}
 .project-section {
   display: flex;
   justify-content: center;
+  background-color: #2c2c2c;
   align-items: center;
   height: 100svh;
 }
@@ -208,8 +222,6 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 95svh;
   background-color: #f5f5f5;
   color: #2c2c2c;
@@ -224,6 +236,14 @@
   background-color: #EEEEEE;
   border: none;
   border-radius: 20px;
+  width: 400px;
+  height: 50px;
+}
+.contact-section form textarea {
+  min-width: 400px;
+  max-width: 400px;
+  min-height: 100px;
+  max-height: 250px;
 }
 
 footer p {

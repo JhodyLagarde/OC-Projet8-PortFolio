@@ -1,114 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jhody Lagarde - Port Folio</title>
-    <meta name="description" content="Jhody Lagarde, développeur web junior port folio ">
-    <!-- FontAwesome et Google Font -->
-    <script src="https://kit.fontawesome.com/7606aa9797.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <!--CSS et JS-->
-    <link rel="stylesheet" href="./assets/styles/index.scss">
-</head>
-<body>
-    <header>
-        <div class="header_wrapper">
-            <div>
-                <p>Jhody Lagarde</p>
-                <nav class="nav1">
-                    <li class="nav1__link">
-                        <ul>
-                            <a href="https://github.com/JhodyLagarde/"><i class="fa-brands fa-github"></i></a>
-                        </ul>
-                        <ul>
-                            <a href="https://www.linkedin.com/in/jhodylagarde/"><i class="fa-brands fa-linkedin-in"></i></a>
-                        </ul>
-                        <ul>
-                            <span class="nav1__link__dot"></span>
-                        </ul>
-                    </li> 
-                </nav>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jhody Lagarde - Port Folio</title>
+        <meta name="description" content="Jhody Lagarde, développeur web junior port folio ">
+
+        <!-- FontAwesome et Google Font -->
+        <script src="https://kit.fontawesome.com/7606aa9797.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
+
+        <!--CSS et JS-->
+        <link rel="stylesheet" href="./assets/styles/index.scss">
+        <script src="./assets/index.js"></script>
+
+    </head>
+    
+    <body>
+
+        <header>
+            <div class="header_wrapper">
+                <div>
+                    <p class="paragraphe">Jhody Lagarde</p>
+                    <nav class="nav1">
+                        <li class="nav1__link">
+                            <ul>
+                                <a href="https://github.com/JhodyLagarde/"><i class="fa-brands fa-github"></i></a>
+                            </ul>
+                            <ul>
+                                <a href="https://www.linkedin.com/in/jhodylagarde/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </ul>
+                            <ul>
+                                <span class="nav1__link__dot"></span>
+                            </ul>
+                        </li> 
+                    </nav>
+                </div>
+                <hr />
+            </div> 
+        </header>
+
+        <main>
+
+            <aside>
+                <nav class="nav2"> 
+                    <div class="nav2__hook">
+                        <a href="#about" title="A propos"><i class="fa-solid fa-user"></i></a>
+                        <a href="#skills" title="Mes compétences"><i class="fa-solid fa-book-open"></i></a>
+                        <a href="#project" title="Mes projets"><i class="fa-solid fa-diagram-project"></i></a>
+                        <a href="#contact" title="Me contacter"><i class="fa-solid fa-envelope"></i></a>  
+                    </div>
+                </nav>  
+            </aside>
+
+            <div class="main-content-container" dir="ltr">
+                <section id="about" class="about-section" >
+                    <div class="about-section__container">
+                        <div class="content-wrapper">
+                            <img class="profil-picture" src="./assets/images/profile-simple-svgrepo-com.svg" alt="Placeholder photo Jhody Lagarde">
+                            <div class="description">
+                                <h1>Jhody Lagarde - Développeur web junior</h1>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim perferendis alias quidem aut, laborum, nam facilis consequuntur ab odit illum harum, rerum veniam nostrum vitae accusamus quibusdam debitis corrupti beatae.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills" class="skills-section">
+                    <div class="skills-section__container">
+                        <h2>Mes compétences</h2>
+                        <div class="scroller">
+                            <ul class="skills-list-1 scroller__inner-1">
+                                <li><img src="./assets/images/icons8-html5.svg" alt="icon html5" class="icon-html"></li>
+                                <li><img src="./assets/images/icons8-css3.svg" alt="icon css3" class="icon-css"></li>
+                                <li><img src="./assets/images/icons8-javascript.svg" alt="icon javascript" class="icon-js"></li>
+                                <li><img src="./assets/images/react-2.svg" alt="icon react" class="icon-react"></li>
+                                <li><img src="./assets/images/bootstrap-5-1.svg" alt="icon bootstrap" class="icon-bootstrap"></li>
+                                <li><img src="./assets/images/icons8-sass.svg" alt="icon sass" class="icon-sass"></li>
+                                <li><img src="./assets/images/mongodb-icon-1.svg" alt="icon mongodb" class="icon-mongodb"></li>
+                                <li><img src="./assets/images/node-js.svg" alt="icon node" class="icon-node"></li>
+                                <li><img src="./assets/images/express-icon.svg" alt="icon express" class="icon-express"></li>
+                            </ul>
+                            <ul class="skills-list-2 scroller__inner-2">
+                                <li><img src="./assets/images/git-icon.svg" alt="icon git" class="icon-git"></li>
+                                <li><img src="./assets/images/github-icon-1.svg" alt="icon github" class="icon-css"></li>
+                                <li><img src="./assets/images/visual-studio-code-1.svg" alt="icon VSCode" class="icon-VSCode"></li>
+                                <li><img src="./assets/images/figma-icon.svg" alt="icon figma" class="icon-react"></li>
+                                <li><img src="./assets/images/trello.svg" alt="icon trello" class="icon-trello"></li>
+                                <li><img src="./assets/images/google-lighthouse-icon-may-2019-.svg" alt="icon lighthouse" class="icon-lighthouse"></li>
+                                <li><img src="./assets/images/wave-2.svg" alt="icon wave" class="icon-wave"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="project" class="project-section">
+                    <div class="project-section__container">
+                        <h2>Mes projets</h2>
+                        <div class="gallery">
+                            <div class="more-projects-container">
+                                <p class="more-projects">Autres projets</p>
+                                <button>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact-section">
+                    <div class="contact-section__container">
+                        <h2>Me contacter</h2>
+                        <form action="#" method="post">
+                            <p><span>*</span> champs obligatoires</p>
+                            <label for="name"  >Nom <span>*</span></label>
+                            <input type="text" name="name" id="name" placeholder="John Doe">
+                            <label for="email">Email <span>*</span></label>
+                            <input type="email" name="email" id="email" placeholder="example@domain.com">
+                            <label for="objet">Objet</label>
+                            <input type="text" name="objet" id="objet">
+                            <label for="message">Message <span>*</span></label>
+                            <textarea name="message" id="message" placeholder="Votre message ..."></textarea>
+                            <div class="wrapper-button">
+                                <input class="button" type="submit" id="submit" value="Envoyer">
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </div>
-            <hr />
-        </div> 
-    </header>
-    <main>
-        <aside>
-            <nav class="nav2"> 
-                <div class="nav2__hook">
-                    <a href="#about"><i class="fa-solid fa-user"></i></a>
-                    <a href="#skills"><i class="fa-solid fa-book-open"></i></a>
-                    <a href="#project"><i class="fa-solid fa-diagram-project"></i></a>
-                    <a href="#contact"><i class="fa-solid fa-envelope"></i></a>  
-                </div>
-            </nav>  
-        </aside>
-        <div class="main-content-container" dir="ltr">
-            <section id="about" class="about-section" >
-                <div class="about-section__container">
-                    <div class="profil-picture">
-                        <img class="profil-picture__img" src="./assets/images/profile-simple-svgrepo-com.svg" alt="Placeholder photo Jhody Lagarde">
-                    </div>
-                    <div class="description">
-                        <h1>Jhody Lagarde - Développeur web junior</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim perferendis alias quidem aut, laborum, nam facilis consequuntur ab odit illum harum, rerum veniam nostrum vitae accusamus quibusdam debitis corrupti beatae.</p>
-                    </div>
-                </div>
-            </section>
+        </main>
 
-            <section id="skills" class="skills-section">
-                <div class="skills">
-                    <h2>Mes compétences</h2>
-                    <div class="skills__container">
-                        <div class="skills__container__1">
-                            <div>
-                                <img src="./assets/images/icons8-html5.svg" alt="icon html5" class="icon-html">
-                                <img src="./assets/images/icons8-css3.svg" alt="icon css3" class="icon-css">
-                            </div>
-                            <div>
-                                <img src="./assets/images/icons8-javascript.svg" alt="icon javascript" class="icon-js">
-                                <img src="./assets/images/react-2.svg" alt="icon react" class="icon-react">
-                            </div>
-                        </div>
-                        <div class="skills__container__2">
-                            <div>
-                                <img src="./assets/images/icons8-sass.svg" alt="icon sass" class="icon-sass">
-                                <img src="./assets/images/mongodb-icon-1.svg" alt="icon mongodb" class="icon-mongodb">
-                            </div>
-                            <div>
-                                <img src="./assets/images/node-js.svg" alt="icon node" class="icon-node">
-                                <img src="./assets/images/express-icon.svg" alt="icon express" class="icon-express">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+        <footer>
+            <p>Développé par Jhody Lagarde</p>
+        </footer>
 
-            <section id="project" class="project-section">
-                <h2>Mes projets</h2>
-            </section>
-
-            <section id="contact" class="contact-section">
-                <h2>Me contacter</h2>
-                <p><span>*</span> champs obligatoires</p>
-                <form action="#" method="post">
-                    <label for="name">Nom<span>*</span></label>
-                    <input type="text" name="name" id="name">
-                    <label for="email">Email<span>*</span></label>
-                    <input type="email" name="email" id="email">
-                    <label for="objet">Objet</label>
-                    <input type="text" name="objet" id="objet">
-                    <label for="message">Message<span>*</span></label>
-                    <textarea name="message" id="message" ></textarea>
-                    <input type="submit" id="submit" value="Envoyer">
-                </form>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <p>Développé par Jhody Lagarde</p>
-    </footer>
-</body>
+    </body>
 </html>
