@@ -8,12 +8,11 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Mars 2024",
         "images": {
-            "cover":"https://ibb.co/n1BqX9q",
-            "logo": "./images/BookiLogo.svg/",
+            "cover":"https://i.ibb.co/rp3KBYK/Booki-Cover-Rezise.jpg",
             "pictures": [
-                "https://ibb.co/YcNd9cP",
-                "https://ibb.co/CJxnCng",
-                "https://ibb.co/pWZNYcz"
+                "https://i.ibb.co/ZBfgsBG/Booki-Screen1.png",
+                "https://i.ibb.co/DG37c7h/Booki-Screen2.png",
+                "https://i.ibb.co/TKRJ968/Booki-Screen3.png"
             ]
         }
     },
@@ -28,12 +27,11 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Avril 2024",
         "images": {
-            "cover":"https://ibb.co/41L94bJ",
-            "logo":"./images/SophieBluelLogo.svg/",
+            "cover":"https://i.ibb.co/WVXqBrs/Sophie-Bluel-Cover-Resize.png",
             "pictures": [
-                "https://ibb.co/f9ZXXd7",
-                "https://ibb.co/sj6rLg4",
-                "https://ibb.co/wyV6VNS"
+                "https://i.ibb.co/RNtggTW/Sophie-Bluel-Screen1.png",
+                "https://i.ibb.co/H7xQmKy/Sophie-Bluel-Screen2.png",
+                "https://i.ibb.co/qBK1KMN/Sophie-Bluel-Screen3.png"
             ]
         }
     },
@@ -47,12 +45,11 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Mai 2024",
         "images": {
-            "cover":"https://ibb.co/0nQp5X2",
-            "logo":"./images/NinaCarducciLogo.svg/",
+            "cover":"https://i.ibb.co/gr6bY79/Nina-Carducci-Cover-Resize.png",
             "pictures": [
-                "https://ibb.co/LzSrq3R",
-                "https://ibb.co/RcgTNFC",
-                "https://ibb.co/pKWTfCY"
+                "https://i.ibb.co/wNy7bfg/Nina-Carducci-Screen1.png",
+                "https://i.ibb.co/zZmVFMS/Nina-Carducci-Screen2.png",
+                "https://i.ibb.co/s154KL8/Nina-Carducci-Screen3.png"
             ]
         }
     },
@@ -68,12 +65,11 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Juin 2024",
         "images": {
-            "cover":"https://ibb.co/C2c8JCT",
-            "logo":"./images/KasaLogo.svg/",
+            "cover":"https://i.ibb.co/6BMwv9f/Kasa-Cover-Resize.png",
             "pictures": [
-                "https://ibb.co/80QDcPb",
-                "https://ibb.co/rFwNPbR",
-                "https://ibb.co/nmW4BzX"
+                "https://i.ibb.co/rmXGs53/Kasa-Screen1.png",
+                "https://i.ibb.co/NC4frZ0/Kasa-Screen2.png",
+                "https://i.ibb.co/YPLw9DF/Kasa-Screen3.png"
             ]
         }
     },
@@ -88,12 +84,11 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Juillet 2024",
         "images": {
-            "cover":"https://ibb.co/FxJ9ZwZ",
-            "logo":"./images/MonVieuxGrimoireLogo.svg/",
+            "cover":"https://i.ibb.co/yf5Dvyv/Mon-Vieux-Grimoire-Cover-Resize.png",
             "pictures": [
-                "https://ibb.co/k2xmfdC",
-                "https://ibb.co/9HjgW5J",
-                "https://ibb.co/fS0SGDb"
+                "https://i.ibb.co/m5GNwxW/Mon-Vieux-Grimoire-Screen1.png",
+                "https://i.ibb.co/VY89T4d/Mon-Vieux-Grimoire-Screen2.png",
+                "https://i.ibb.co/59c9xKd/Mon-Vieux-Grimoire-Screen3.png"
             ]
         }
     },
@@ -108,12 +103,11 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Août 2024",
         "images": {
-            "cover":"https://ibb.co/nmmsjsv",
-            "logo":"./images/MenuMakerByQwentaLogo.svg/",
+            "cover":"https://i.ibb.co/YQQ7h7M/Menu-Maker-By-Qwenta-Cover-Resize.png",
             "pictures": [
-                "https://ibb.co/T1Y9H6C",
-                "https://ibb.co/yRqDF32",
-                "https://ibb.co/g4MCcG2"
+                "https://i.ibb.co/C6mRngr/Menu-Maker-By-Qwenta-Screen1.png",
+                "https://i.ibb.co/g7JGZnY/Menu-Maker-By-Qwenta-Screen2.png",
+                "https://i.ibb.co/5KWVJd0/Menu-Maker-By-Qwenta-Screen3.png"
             ]
         }
     },
@@ -131,8 +125,7 @@
         "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
         "date": "Septembre 2024",
         "images": {
-            "cover":"",
-            "logo":"./images/BookiLogo.svg/",
+            "cover":"https://i.ibb.co/crfQFD2/profile-simple-svgrepo-com.png",
             "pictures": [
                 "",
                 "",
