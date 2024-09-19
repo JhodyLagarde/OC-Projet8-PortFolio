@@ -785,6 +785,44 @@
                 label{
                     width: 400px;
                 }
+
+                .wrapper-button{
+                    align-self: center;
+                    width: 150px;
+                    cursor: not-allowed; 
+    
+                    .button{
+                        padding: 0;
+                        width: 150px;
+                        font-family: inherit;
+                        pointer-events:none;
+                        color: $mainColor;
+                        background-color: $secondColor;
+                        border: solid 1px $mainColor;
+                    }
+                }
+
+                .wrapper-button-active{
+                    align-self: center;
+                    width: 150px;
+                    cursor: pointer;
+
+                    .button-active {
+                        padding: 0;
+                        width: 150px;
+                        font-family: inherit;
+                        pointer-events: all; 
+                        background-color: $mainColor;
+                        color: $secondColor;
+                        
+                        &:hover{
+                            background-color: $activeColor;
+                            border-color: $activeColor;
+                            color: $secondColor;
+                        }
+                    }
+                }
+                
             }
             @media (max-width: 500px){
 
@@ -825,9 +863,29 @@
                         width: 100px;
                         font-family: inherit;
                         pointer-events:none;
-                        color: $secondColor;
+                        color: $mainColor;
+                        background-color: $secondColor;
+                        border: solid 1px $mainColor;
+                    }
+                }
+                .wrapper-button-active{
+                    align-self: center;
+                    width: 100px;
+                    cursor: pointer;
+
+                    .button-active {
+                        padding: 0;
+                        width: 100px;
+                        font-family: inherit;
+                        pointer-events: all; 
                         background-color: $mainColor;
-                        border: solid 1px $secondColor;
+                        color: $secondColor;
+                        
+                        &:hover{
+                            background-color: $activeColor;
+                            border-color: $activeColor;
+                            color: $secondColor;
+                        }
                     }
                 }
             }
