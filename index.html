@@ -18,6 +18,37 @@
         <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
         <script type="module" src="./assets/index.js" defer></script>
 
+        <!-- Twitter card -->
+	    <meta name="twitter:card" content="summary">
+	    <meta name="twitter:site" content="@publisher_handle">
+	    <meta name="twitter:title" content="Jhody Lagarde - Développeur web junior">
+	    <meta name="twitter:description" content="">
+	    <meta name="twitter:url" content="">
+	    <meta name="twitter:image" content="">
+	    <meta name="twitter:image:alt" content="">
+
+        <!-- Open Graph -->
+	    <meta property="og:title" content="Jhody Lagarde - Développeur web junior">
+	    <meta property="og:site_name" content="Jhody Lagarde - Développeur web junior">
+	    <meta property="og:type" content="website">
+	    <meta property="og:locale" content="fr">
+	    <meta property="og:url" content="">
+	    <meta property="og:image" content="">
+	    <meta property="og:image:alt" content="">
+	    <meta property="og:description" content="">
+
+        <!-- Rich snippet -->
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "",
+              "name": "Jhody Lagarde - Développeur web junior",
+              "image": "./assets/images/portrait-nina-carducci-resize.webp",
+              "@id": "",
+              "url": "",
+            }
+        </script>
+
     </head>
     
     <body>
@@ -25,7 +56,7 @@
         <header>
             <div class="header_wrapper">
                 <div>
-                    <a href="#about" title="A propos"><p class="paragraphe">Jhody Lagarde</p></a>
+                    <a href="#about" title="A propos"><p class="logo">Jhody Lagarde</p></a>
                     <nav class="nav1">
                         <li class="nav1__link">
                             <ul>
@@ -64,7 +95,17 @@
                             <img class="profil-picture" src="./assets/images/profile-simple-svgrepo-com.svg" alt="Placeholder photo Jhody Lagarde">
                             <div class="description">
                                 <h1>Jhody Lagarde - Développeur web junior</h1>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim perferendis alias quidem aut, laborum, nam facilis consequuntur ab odit illum harum, rerum veniam nostrum vitae accusamus quibusdam debitis corrupti beatae.</p>
+                                <p>
+                                    Bonjour, je suis Jhody, développeur web<b> fullstack</b>. <br>
+                                    <br>
+                                    Je peux à la fois concevoir le <b>front-end</b> (avec HTML5/CSS3 et JavaScript) et le <b>back-end</b>
+                                    (avec le développement d'APIs RESTful grâce a NodeJS et ExpressJS), 
+                                    qui me permet de créer des applications <b>complètes</b>, <b>responsives</b> et <b>optimisées</b>. 
+                                    <br>
+                                    <br>
+                                    Autonome et toujours à la recherche de nouveaux défis et de projets innovants à réaliser,
+                                    je suis aussi passionné par le milieu du design, UX/UI.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -105,6 +146,7 @@
                         <h2>Mes projets</h2>
                         <div class="gallery-container">
                             <div class="gallery">
+                                
                             </div>
                             <div class="more-projects-container">
                                 <p class="more-projects">Autres projets</p>
@@ -150,6 +192,10 @@
                                 <div class="modal-body__description">
 
                                 </div>
+                                <p class="modal-body__annex-p">Annexe</p>
+                                <div class="modal-body__links">
+                                    
+                                </div>
                             </div>
                             
                           </div>
@@ -161,7 +207,7 @@
                 <section id="contact" class="contact-section">
                     <div class="contact-section__container">
                         <h2>Me contacter</h2>
-                        <form action="#" method="post">
+                        <form>
                             <p><span>*</span> champs obligatoires</p>
                             <label for="name">Nom <span>*</span></label>
                             <input type="text" name="name" id="name" placeholder="John Doe" required>
@@ -175,7 +221,19 @@
                                 <input class="button button-inactive" id="button" type="submit" id="submit" value="Envoyer">
                             </div>
                         </form>
+                    </div>  
+
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                          <div class="toast-header">
+                            <i class="fa-solid fa-envelope rounded me-2"></i>
+                            <strong class="me-auto">État du message</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                          </div>
+                          <div class="toast-body"></div>
+                        </div>
                     </div>
+
                 </section>
             </div>
         </main>

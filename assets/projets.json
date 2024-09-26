@@ -5,7 +5,16 @@
             "HTML",
             "CSS"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "links":[
+                "https://github.com/JhodyLagarde/OC-Projet2-Booki"
+            ],
+            "linksDescription": [
+                "Github"
+            ]
+        },
+        "links":"https://github.com/JhodyLagarde/OC-Projet2-Booki",
+        "description": "Le but de ce projet était de créer la page d'accueil d'une agence de voyage static avec HTML & CSS. Pour la mise en situation, l’entreprise 'Booki' souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Je suis donc ici chargé d'intégrer l'interface du site avec du code HTML et CSS de manière responsive. J'ai en ma disposition une base de code, une note de synthése pour l'integration du site ainsi qu'une maquette figma du design attendu.",
         "date": "Mars 2024",
         "images": {
             "cover":"https://i.ibb.co/rp3KBYK/Booki-Cover-Rezise.jpg",
@@ -24,7 +33,15 @@
             "HTML",
             "CSS"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "links": [
+                "https://github.com/JhodyLagarde/OC-Projet3-SophieBluel"
+            ],
+            "linksDescription": [
+                "Github"
+            ]
+        },
+        "description": "Le but de ce projet était de créer une page web dynamique avec JavaScript. Pour la mise en situation, je travail comme développeur front-end pour l’agence ArchiWebos qui comprend 50 salariés. Ayant terminé mon dernier projet avec un peu d'avance, je suis envoyé en renfort comme développeur front-end d’une équipe qui travaille sur la conception du site portfolio d’une architecte d’intérieur 'Sophie Bluel'. Aprés un brief d'équipe en visio-conférence ou l'on m'explique ma mission, on met à ma disposition la maquette figma, le code static front-end de la page d'acceuil ainsi que le code back-end avec le lien vers la documentation Swagger et le Kanban du projet. Je devrais donc ici développer: la page de présentation des travaux de l'architecte, la page de connexion de l'administrateur du site et enfin la modale permettant d'uploader de nouveaux médias",
         "date": "Avril 2024",
         "images": {
             "cover":"https://i.ibb.co/WVXqBrs/Sophie-Bluel-Cover-Resize.png",
@@ -42,7 +59,17 @@
             "Optimisation SEO",
             "Debug"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "links":[
+                "https://github.com/JhodyLagarde/OC-Projet4-NinaCarducci",
+                "https://drive.google.com/file/d/1mzcs-pYowyK8zFPK54Js2F1aUbbzHZoX/view?usp=sharing"
+            ],
+            "linksDescription": [
+                "Github",
+                "Rapport d’intervention"
+            ]
+        },
+        "description": "Le but de ce projet était de débugger et d'optimiser un site de photographe. Pour la mise en situation, je suis développeur freelance et je décide de proposer mes services d’optimisation SEO à de nouveaux clients. Parmi mes prospects, il y a le site de Nina Carducci, une photographe dont m'a parlé l’un de mes amis. Je décide donc de lui envoyer un mail lui pointant les améliorations que je pourrais apporter à son portfolio. Après son approbation, Nina m'indique quelques points d'amelioration qu'elle souhaiterait ajouter en plus des points que j'ai avancé. Je vais donc grâce aux Chrome DevTools, Google LightHouse ainsi que Wave amélioré le réferencement SEO et l'accéssibilité du portfolio de Nina.",
         "date": "Mai 2024",
         "images": {
             "cover":"https://i.ibb.co/gr6bY79/Nina-Carducci-Cover-Resize.png",
@@ -62,7 +89,15 @@
             "Sass",
             "JavaScript"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "links": [
+                "https://github.com/JhodyLagarde/OC-Projet5-Kasa"
+            ],
+            "linksDescription": [
+                "Github"
+            ]
+        },
+        "description": "Le but de ce projet était de créer une application web de location immobilière avec React. Pour la mise en situation, je suis développeur front-end en freelance pour Kasa, une entreprise de location d’appartements entre particuliers. Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec un code legacy important, la CTO souhaite donc lancer une refonte totale pour passer à une stack complète en JavaScript avec NodeJS côté back-end, et React côté front-end. Je serais donc chargé de développer le front-end de l'application avec React et utiliserai le préprocesseur SASS pour le CSS de l'application. J'aurai à ma disposition la maquette figma avec le prototype de fonctionnement attendu du site ainsi qu'une 'coding guidelines' pour m'aider lors du développement.",
         "date": "Juin 2024",
         "images": {
             "cover":"https://i.ibb.co/6BMwv9f/Kasa-Cover-Resize.png",
@@ -81,7 +116,15 @@
             "Express",
             "APIRest"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "links": [
+                "https://github.com/JhodyLagarde/OC-Projet6-MonVieuxGrimoire"
+            ],
+            "linksDescription": [
+                "Github"
+            ]
+        },
+        "description": "Le but de ce projet était de développer le back-end d'un site de notation de livres. Pour la mise en situation, je suis développeur back-end en freelance et un développeur front-end avec qui j'ai l'habitude de travailler me propose de l'aider sur l'un de ces projets où je m'occuperai de la mise en place d'un back-end d'une application pour une petite chaine de librairies qui souhaite ouvrir un site de référencement et de notation de livres : 'Mon Vieux Grimoire'. Je développerai donc une 'API RESTfull' avec 'NodeJS' est 'ExpressJS' ainsi que la mise en base de donnés avec 'MongoDB'.",
         "date": "Juillet 2024",
         "images": {
             "cover":"https://i.ibb.co/yf5Dvyv/Mon-Vieux-Grimoire-Cover-Resize.png",
@@ -100,7 +143,17 @@
             "Trello",
             "Feedly"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "links": [
+                "https://trello.com/b/tBQpokiK", 
+                "https://drive.google.com/file/d/1wyAwCLacpwY3BJG2pNcsl0UdHBcxqdSL/view?usp=sharing"
+            ],
+            "linksDescription": [
+                "Trello",
+                "Spécifications techniques"
+            ] 
+        },
+        "description": "Le but de ce projet était de planifier le développement du site de mon client. Pour la mise en situation: je suis développeur front-end au sein de l’agence Webgencia et je remplacerai le Product Owner du projet. Mon client Qwenta ici souhaite faire développer un “Menu Maker” : un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics. A l'aide de la maquette figma envoyée par le designer du projet ainsi que les spécifications fonctionnelles, je devrai mettre en place et planifier le développement avec les méthodes agiles (ici la méthode 'SCRUM'), créer le suivi de développement grâce à un kanban sur 'trello', mettre en place un système de veille informationnelle pour moi et l'équipe de développement avec feedly et enfin rechercher les spécifications techniques adéquates au projet.",
         "date": "Août 2024",
         "images": {
             "cover":"https://i.ibb.co/YQQ7h7M/Menu-Maker-By-Qwenta-Cover-Resize.png",
@@ -122,14 +175,22 @@
             "Vite",
             "PHP"
         ],
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur excepturi, autem illum obcaecati incidunt asperiores, quasi est unde dolores ut esse mollitia dolorem! Dolore, repellat?",
+        "annex":{
+            "Github": [
+                "https://github.com/JhodyLagarde/OC-Projet8-PortFolio"
+            ],
+            "linksDescription": [
+                "Github"
+            ]
+        },
+        "description": "Le but de ce projet était de développer mon portfolio de développeur web personnel. Je suis ici libre de choisir les fonctionnalités et le design de celui-ci. Les seules contraintes sont de ne pas utiliser de CMS ou de site builder et que le portfolio soit entièrement responsive. Je devrai présenter mon profil de développeur, au moins 2 projets sur lesquels j'ai travaillé et qu'il soit accessible en ligne.",
         "date": "Septembre 2024",
         "images": {
             "cover":"https://i.ibb.co/crfQFD2/profile-simple-svgrepo-com.png",
             "pictures": [
-                "",
-                "",
-                ""
+                "https://i.ibb.co/FXqFnZY/Capture-d-cran-2024-09-24-181756.png",
+                "https://i.ibb.co/NK3Rn8c/Capture-d-cran-2024-09-24-181402.png",
+                "https://i.ibb.co/jgVvHyx/Capture-d-cran-2024-09-24-181649.png"
             ]
         }
     }
