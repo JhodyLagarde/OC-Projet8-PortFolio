@@ -36,6 +36,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $send = mail($to,$subject,$message,$headers);
 
         echo "erreur";
+        var_dump($send);
         var_dump(error_get_last());
         
         if($send){
