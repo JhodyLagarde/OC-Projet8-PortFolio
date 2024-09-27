@@ -24,10 +24,12 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             <p> <strong> Message: </strong> ".$message."</p>
         ";
 
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        // $headers = "MIME-Version: 1.0" . "\r\n";
+        // $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
-        $headers .= 'From: <'.$mail.'>' . "\r\n";
+        // $headers .= 'From: <'.$mail.'>' . "\r\n";
+
+        $headers = "From: Ronan <ronan.marret@seolh.fr>\r\nReply-To: ronan.marret@seolh.fr; Content-Type: text/plain; charset=UTF-8";
 
         $send = mail($to,$subject,$message,$headers);
 
