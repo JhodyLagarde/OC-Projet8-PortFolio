@@ -19,6 +19,7 @@ const formObject = document.querySelector('#objet');
 const formMessage = document.querySelector('#message');
 const formButtonWrapper = document.querySelector('#wrapper-button');
 const formButton = document.querySelector('#button');
+const form = document.querySelector('form');
 
 //Toast quarySelector
 const toastLiveExample = document.getElementById('liveToast');
@@ -29,7 +30,7 @@ const toastBody = document.querySelector('toast-body');
 gallery.addEventListener('click', modalContent);
 btnClose.addEventListener('click', modalClear);
 //Form
-formButton.addEventListener('submit', postForm);
+formButton.addEventListener('click', postForm);
 
 //Functions for projects' dynamic figures in gallery
 //Creating figures in gallery
@@ -197,7 +198,7 @@ async function postForm(event) {
     let formObjectV = formObject.value;
     let formMessageV = formMessage.value;
 
-    fetch('../form.php', {
+    const req = await fetch('../form.php', {
         method: 'POST',
         body: JSON.stringify({
             name: formNameV,
@@ -212,9 +213,9 @@ async function postForm(event) {
 
     const res = await req.json();
     if (res.response == true) {
-        toastTriggerTrue;
+        toastTriggerTrue();
     } else {
-        toastTriggerFalse;
+        toastTriggerFalse();
     }
 }
 
