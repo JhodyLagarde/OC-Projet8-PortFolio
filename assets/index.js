@@ -198,7 +198,7 @@ async function postForm(event) {
     let formObjectV = formObject.value;
     let formMessageV = formMessage.value;
 
-    const req = await fetch('../form.php', {
+    const req = await fetch('../public/form.php', {
         method: 'POST',
         body: JSON.stringify({
             name: formNameV,
