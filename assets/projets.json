@@ -176,11 +176,13 @@
             "PHP"
         ],
         "annex":{
-            "Github": [
-                "https://github.com/JhodyLagarde/OC-Projet8-PortFolio"
+            "links": [
+                "https://github.com/JhodyLagarde/OC-Projet8-PortFolio",
+                "https://www.figma.com/design/jyXeGZl6zheLwimdkAzAPV/Projet-8-OC-PortFolio?node-id=0-1&t=iK9Qx67ZLcj74sc5-1"
             ],
             "linksDescription": [
-                "Github"
+                "Github",
+                "Maquette"
             ]
         },
         "description": "Le but de ce projet était de développer mon portfolio de développeur web personnel. Je suis ici libre de choisir les fonctionnalités et le design de celui-ci. Les seules contraintes sont de ne pas utiliser de CMS ou de site builder et que le portfolio soit entièrement responsive. Je devrai présenter mon profil de développeur, au moins 2 projets sur lesquels j'ai travaillé et qu'il soit accessible en ligne.",
