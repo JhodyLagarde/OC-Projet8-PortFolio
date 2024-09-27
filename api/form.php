@@ -1,8 +1,8 @@
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
-ini_set('SMTP','smtp-relay.gmail.com' );
-ini_set('smtp_port',465);
+// ini_set('SMTP','smtp-relay.gmail.com' );
+// ini_set('smtp_port',465);
 error_reporting(E_ALL);
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
