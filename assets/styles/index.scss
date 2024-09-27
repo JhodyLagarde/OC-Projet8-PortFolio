@@ -748,6 +748,10 @@
 
         h2{
             margin-top: 5rem;
+
+            @media (max-width: 500px){
+                margin: 7rem 0 1rem 0;
+            }
         }
 
         form {
@@ -905,6 +909,7 @@
                 
             }
             @media (max-width: 500px){
+                gap: 10px;
 
                 p{
                     font-size: 12px;
@@ -919,7 +924,8 @@
                 input,
                 textarea{
                     width: 250px;
-                    height: 50px;
+                    height: 40px;
+                    border-radius: 10px;
                     font-size: 12px;
                 }
 
