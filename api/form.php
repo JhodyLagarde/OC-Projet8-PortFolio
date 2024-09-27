@@ -35,6 +35,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
         $send = mail($to,$subject,$message,$headers);
 
+        if (!$send) {
+            print_r(error_get_last());
+        }
+        
         if($send){
 
             $arr = array(
