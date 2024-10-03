@@ -22,8 +22,8 @@ const formButton = document.querySelector('#button');
 const form = document.querySelector('form');
 
 //Toast quarySelector
-const toastLiveExample = document.getElementById('liveToast');
-const toastBody = document.querySelector('toast-body');
+const liveToastSend = document.getElementById('live-Toast-Send');
+const liveToastNotSend = document.getElementById('live-Toast-NotSend');
 
 //Events
 //Modal
@@ -193,46 +193,59 @@ formMessage.addEventListener('input', formRequire);
 async function postForm(event) {
     event.preventDefault();
 
-    let formNameV = formName.value;
-    let formEmailV = formEmail.value;
-    let formObjectV = formObject.value;
-    let formMessageV = formMessage.value;
+    let fordata = {
+        name: formName.value,
+        email: formEmail.value,
+        object: formObject.value,
+        message: formMessage.value,
+    };
 
-    const req = await fetch('../api/form', {
-        method: 'POST',
-        body: JSON.stringify({
-            name: formNameV,
-            mail: formEmailV,
-            object: formObjectV,
-            message: formMessageV,
-        }),
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    });
+    console.log(fordata);
 
-    const res = await req.json();
-    if (res.response == true) {
-        toastTriggerTrue();
-    } else {
-        toastTriggerFalse();
-    }
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', '/');
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.onload = function () {
+        console.log(xhr.responseText);
+        if (xhr.responseText == 'success') {
+            toastLiveSend();
+            formName.value = '';
+            formEmail.value = '';
+            formObject.value = '';
+            formMessage.value = '';
+        } else {
+            alert('something went wrong!');
+        }
+    };
+    xhr.send(JSON.stringify(fordata));
+    // fetch('/', {
+    //     method: 'POST',
+    //     body: JSON.stringify(fordata),
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //     },
+    // }).then(function (response) {
+    //     console.log(response);
+    //     if (response == 'success') {
+    //         toastLiveSend();
+    //         formName.value = '';
+    //         formEmail.value = '';
+    //         formObject.value = '';
+    //         formMessage.value = '';
+
+    //     } else {
+    //         toastLiveNotSend();
+    //     }
+    // });
 }
 
-function toastTriggerTrue() {
-    const toastBodyP = document.createElement('p');
-    toastBodyP.innerText = 'Votre message à été  envoyé !';
-    toastBody.appendChild(toastBodyP);
-    const toastBootstrap =
-        bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+function toastLiveSend() {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(liveToastSend);
     toastBootstrap.show();
 }
 
-function toastTriggerFalse() {
-    const toastBodyP = document.createElement('p');
-    toastBodyP.innerText = 'Une erreur est survenue';
-    toastBody.appendChild(toastBodyP);
+function toastLiveNotSend() {
     const toastBootstrap =
-        bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+        bootstrap.Toast.getOrCreateInstance(liveToastNotSend);
     toastBootstrap.show();
 }
