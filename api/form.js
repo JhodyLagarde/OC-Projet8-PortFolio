@@ -5,21 +5,20 @@ require('dotenv').config();
 
 const app = express();
 
-const PORT = process.env.PORT || 5000
-
 //Middleware
-app.use(express.static('FrontEnd'));
+app.use(express.static('../FrontEnd'));
 app.use(express.json());
 
 //Route
+
 app.post('/', (req, res) => {
   console.log(req.body);
 
   const transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
-      user: '',
-      pass: ''
+      user: "",   //contact.jhody.lagarde@gmail.com
+      pass: ""    //process.env.pass
     }
   });
   
@@ -42,6 +41,4 @@ app.post('/', (req, res) => {
 
 })
 
-app.listen(PORT, () => {
-  console.log(`Server port : ${PORT}`)
-})
+module.exports = app;

@@ -208,13 +208,15 @@ async function postForm(event) {
     xhr.onload = function () {
         console.log(xhr.responseText);
         if (xhr.responseText == 'success') {
-            toastLiveSend();
+            alert('Message envoyé !');
             formName.value = '';
             formEmail.value = '';
             formObject.value = '';
             formMessage.value = '';
         } else {
-            alert('something went wrong!');
+            alert(
+                "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
+            );
         }
     };
     xhr.send(JSON.stringify(fordata));
@@ -237,15 +239,4 @@ async function postForm(event) {
     //         toastLiveNotSend();
     //     }
     // });
-}
-
-function toastLiveSend() {
-    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(liveToastSend);
-    toastBootstrap.show();
-}
-
-function toastLiveNotSend() {
-    const toastBootstrap =
-        bootstrap.Toast.getOrCreateInstance(liveToastNotSend);
-    toastBootstrap.show();
 }
