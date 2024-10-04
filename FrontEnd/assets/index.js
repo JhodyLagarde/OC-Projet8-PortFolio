@@ -202,12 +202,34 @@ async function postForm(event) {
 
     console.log(fordata);
 
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/');
-    xhr.setRequestHeader('content-type', 'application/json');
-    xhr.onload = function () {
-        console.log(xhr.responseText);
-        if (xhr.responseText == 'success') {
+    // let xhr = new XMLHttpRequest();
+    // xhr.open('POST', '/');
+    // xhr.setRequestHeader('content-type', 'application/json');
+    // xhr.onload = function () {
+    //     console.log(xhr.responseText);
+    //     if (xhr.responseText == 'success') {
+    //         alert('Message envoyé !');
+    //         formName.value = '';
+    //         formEmail.value = '';
+    //         formObject.value = '';
+    //         formMessage.value = '';
+    //     } else {
+    //         alert(
+    //             "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
+    //         );
+    //     }
+    // };
+    // xhr.send(JSON.stringify(fordata));
+
+    fetch('/', {
+        method: 'POST',
+        body: JSON.stringify(fordata),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    }).then(function (response) {
+        console.log(response);
+        if (response == 'success') {
             alert('Message envoyé !');
             formName.value = '';
             formEmail.value = '';
@@ -218,25 +240,5 @@ async function postForm(event) {
                 "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
             );
         }
-    };
-    xhr.send(JSON.stringify(fordata));
-    // fetch('/', {
-    //     method: 'POST',
-    //     body: JSON.stringify(fordata),
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //     },
-    // }).then(function (response) {
-    //     console.log(response);
-    //     if (response == 'success') {
-    //         toastLiveSend();
-    //         formName.value = '';
-    //         formEmail.value = '';
-    //         formObject.value = '';
-    //         formMessage.value = '';
-
-    //     } else {
-    //         toastLiveNotSend();
-    //     }
-    // });
+    });
 }
