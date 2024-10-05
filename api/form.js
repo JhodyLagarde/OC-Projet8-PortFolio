@@ -1,6 +1,5 @@
 const express = require('express');
 const nodeMailer = require('nodemailer');
-const path = require('path');
 
 require('dotenv').config();
 
@@ -18,7 +17,7 @@ app.use((req, res, next) => {
 });
 
 //Routing
-app.post('/senMail', (req, res) => {
+app.post('/sendMail', (req, res) => {
   console.log(req.body);
 
   const transporter = nodeMailer.createTransport({
@@ -49,6 +48,6 @@ app.post('/senMail', (req, res) => {
 
 });
 
-app.use("/", express.static('../FrontEnd/dist'));
+app.use("/", express.static('./FrontEnd/dist'));
 
 module.exports = app;
