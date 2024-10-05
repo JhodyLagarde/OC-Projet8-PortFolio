@@ -24,8 +24,8 @@ app.post('/senMail', (req, res) => {
   const transporter = nodeMailer.createTransport({
     service: 'gmail',
     auth: {
-      user: "",   //contact.jhody.lagarde@gmail.com
-      pass: ""    //process.env.pass
+      user: process.env.USER,   //contact.jhody.lagarde@gmail.com
+      pass: process.env.pass    //process.env.pass
     }
   });
   
