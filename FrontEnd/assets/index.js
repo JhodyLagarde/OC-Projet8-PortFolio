@@ -230,15 +230,15 @@ async function postForm(event) {
     }).then(function (response) {
         console.log(response);
         if (response.status === 500) {
+            alert(
+                "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
+            );
+        } else {
             alert('Message envoyé !');
             formName.value = '';
             formEmail.value = '';
             formObject.value = '';
             formMessage.value = '';
-        } else {
-            alert(
-                "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
-            );
         }
     });
 }
