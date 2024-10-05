@@ -229,7 +229,7 @@ async function postForm(event) {
         },
     }).then(function (response) {
         console.log(response);
-        if (response == 'success') {
+        if (response.status === 500) {
             alert('Message envoyé !');
             formName.value = '';
             formEmail.value = '';
