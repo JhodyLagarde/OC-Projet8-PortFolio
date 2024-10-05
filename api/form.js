@@ -32,7 +32,14 @@ app.post('/sendMail', (req, res) => {
     from: req.body.email,
     to: 'contact.jhody.lagarde@gmail.com',
     subject: `Message de ${req.body.name}: ${req.body.object}`,
-    text: req.body.message
+    html: `
+      <h1>Message de <b>${req.body.name}</b></h1>
+      <h2>Sujet: <b>${req.body.object}</b><h2>
+      <hr />
+      <p>${req.body.message}</p>
+      <hr />
+      <p>Email de ${req.body.name}: <b>${req.body.email}</b></p>
+      `
   };
   
   transporter.sendMail(mailOptions, function(error, info){
@@ -48,6 +55,6 @@ app.post('/sendMail', (req, res) => {
 
 });
 
-app.use("/", express.static('./FrontEnd/dist'));
+app.use("/", express.static('../FrontEnd/dist'));
 
 module.exports = app;
