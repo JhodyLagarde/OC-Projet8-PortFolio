@@ -7,7 +7,6 @@ require('dotenv').config();
 const app = express();
 
 //Middleware
-app.use(express.static('../FrontEnd'));
 app.use(express.json());
 
 // CORS
@@ -19,7 +18,7 @@ app.use((req, res, next) => {
 });
 
 //Routing
-app.post('/', (req, res) => {
+app.post('/senMail', (req, res) => {
   console.log(req.body);
 
   const transporter = nodeMailer.createTransport({
@@ -47,6 +46,8 @@ app.post('/', (req, res) => {
     }
   })
 
-})
+});
+
+app.use("/", express.static('../FrontEnd/dist'));
 
 module.exports = app;
