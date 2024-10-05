@@ -49,6 +49,7 @@ app.post('/sendMail', (req, res) => {
       res.send('error');
     } else {
       console.log('Email sent: ' + info.response);
+      res.status(200);
       res.send('success');
     }
   })

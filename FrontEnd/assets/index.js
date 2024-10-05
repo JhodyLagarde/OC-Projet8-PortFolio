@@ -229,16 +229,35 @@ async function postForm(event) {
         },
     }).then(function (response) {
         console.log(response);
-        if (response.status === 500) {
-            alert(
-                "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
-            );
-        } else {
-            alert('Message envoyé !');
-            formName.value = '';
-            formEmail.value = '';
-            formObject.value = '';
-            formMessage.value = '';
+        switch (response.status) {
+            case 500:
+                alert(
+                    "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
+                );
+                break;
+            case 200:
+                alert('Message envoyé !');
+                formName.value = '';
+                formEmail.value = '';
+                formObject.value = '';
+                formMessage.value = '';
+                return response.json();
+            default:
+                alert(
+                    "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
+                );
+                break;
         }
+        // if (response.status === 200) {
+        //     alert('Message envoyé !');
+        //     formName.value = '';
+        //     formEmail.value = '';
+        //     formObject.value = '';
+        //     formMessage.value = '';
+        // } else {
+        //     alert(
+        //         "Votre message n'a pas pu être envoyé. Pour me contacter: contact.jhody.lagarde@gmail.com"
+        //     );
+        // }
     });
 }
