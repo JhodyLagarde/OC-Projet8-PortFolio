@@ -1,25 +1,4 @@
-{ 
-    "version": 2,
-    "builds": [
-        {
-            "src": "api/form.js",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "FrontEnd/**",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "form.js"
-        },
-        {
-            "src": "/",
-            "dest": "FrontEnd/index.html"
-        }
-    ],
+{
     "rewrites": [
         { 
             "src": "/api/(.*)", 
