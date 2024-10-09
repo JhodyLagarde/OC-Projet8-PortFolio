@@ -221,7 +221,7 @@ async function postForm(event) {
     // };
     // xhr.send(JSON.stringify(fordata));
 
-    fetch('/sendMail', {
+    fetch('/api/sendMail', {
         method: 'POST',
         body: JSON.stringify(fordata),
         headers: {
