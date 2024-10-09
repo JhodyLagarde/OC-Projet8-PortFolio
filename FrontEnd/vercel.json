@@ -2,7 +2,7 @@
     "rewrites":[
         {
             "source": "/api/:path*",
-            "destination": "/"
+            "destination": "https://jhodylagarde-portfolio.vercel.app/api/:path"
         }
     ]
 }
