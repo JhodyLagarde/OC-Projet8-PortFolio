@@ -276,6 +276,7 @@
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 .skills-section__container .scroller[data-animated=true] .scroller__inner {
+  width: -moz-max-content;
   width: max-content;
   flex-wrap: nowrap;
   animation: scroll var(--_animation-duration, 20s) var(--_animation-direction, forwards) linear infinite;
@@ -347,7 +348,8 @@
   border-radius: 0.5rem;
 }
 .project-section .modal .modal-dialog .carousel img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0.5rem;
   height: 250px;
 }
@@ -533,7 +535,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   row-gap: 50px;
 }
 @media (max-width: 1250px) {
@@ -541,7 +544,8 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     row-gap: 30px;
-    column-gap: 30px;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
   }
 }
 @media (max-width: 500px) {
@@ -560,7 +564,8 @@
   cursor: pointer;
 }
 .project-section__container .gallery-container .gallery figure img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block;
   border-radius: 5px;
   width: 200px;
@@ -584,11 +589,9 @@
   width: 200px;
   height: 200px;
   opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .project-section__container .gallery-container .gallery figure:hover {
-  -webkit-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15);
 }
 .project-section__container .gallery-container .gallery figure:hover::after {
@@ -694,6 +697,9 @@
   height: 50px;
   font-size: 16px;
   font-family: inherit;
+}
+.contact-section__container form input::-moz-placeholder, .contact-section__container form textarea::-moz-placeholder {
+  opacity: 0.4;
 }
 .contact-section__container form input::placeholder,
 .contact-section__container form textarea::placeholder {
@@ -857,9 +863,6 @@
     border-color: #707070;
     color: #f5f5f5;
   }
-}
-.contact-section .toast-body {
-  color: #2c2c2c;
 }
 
 footer p {

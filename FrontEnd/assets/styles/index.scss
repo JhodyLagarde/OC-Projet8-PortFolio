@@ -76,6 +76,7 @@
 
         p{
             margin: 0;
+            font-size: large;
         }
 
         .nav1 {
@@ -113,13 +114,13 @@
         width: 75%;
        
         div .nav1__link ul i{
-            font-size: 0.975rem;
+            font-size: medium;
         }
     }
 
     @media (max-width: 500px){
         .logo{
-            font-size: 0.688rem;
+            font-size: small;
         }
 
         div .nav1__link ul i{
