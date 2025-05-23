@@ -38,8 +38,15 @@
     
     p,
     label {
-        font-size: 0.875rem;
+        font-size: 1.125rem;
         font-weight: 400;
+    }
+
+    @media (max-width: 1250px){
+        p,
+        label {
+            font-size: 1rem;
+        }
     }
 
     @media (max-width: 750px){
@@ -634,13 +641,13 @@
 
                 figure{
                     border-radius: 10px;
-                    border: solid 1px $mainColor;
                     width: 200px;
                     height: 200px;
                     margin: 0;
                     position: relative;
                     display: block;
                     cursor: pointer;
+                    box-shadow: rgba(0, 0, 0, 0.26) 0px 0px 20px 10px;
 
                     img{
                         object-fit: cover;
@@ -651,12 +658,15 @@
                     }
 
                     figcaption{
+                        
+                        font-size: 20px;
                         color: $secondColor;
-                        text-shadow: 1px 1px 4px $mainColor;
+                        text-shadow:  0px 0px 10px $mainColor, 0px 5px 10px $mainColor, 0px -5px 10px $mainColor, -5px 0px 10px $mainColor, 5px 0px 10px $mainColor, 5px 0px 10px $mainColor;
                         position: absolute;
+                        width: 80%;
                         left: 10px;
                         bottom: 10px;
-                        font-weight: 600;
+                        font-weight: 800;
                     }
 
                     &:after{
@@ -715,8 +725,9 @@
                         }
                         
                         figcaption{
+                            text-shadow:  0px 0px 5px $mainColor, 0px 2px 5px $mainColor, 0px -2px 5px $mainColor, -2px 0px 5px $mainColor, 2px 0px 5px $mainColor, 2px 0px 5px $mainColor;
                             font-size: 10px;
-                            left: 10px;
+                            left: 5px;
                             bottom: 10px;
                             width: 120px;
                         }

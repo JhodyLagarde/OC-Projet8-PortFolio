@@ -1,5 +1,54 @@
 [
     {
+        "name": "Maquettage d'un Portfolio",
+        "tags": [
+            "Figma"
+        ],
+        "annex":{
+            "links":[
+                "https://www.figma.com/design/Y3WPlaL4WpDQOEgZLwRuK9/Atelier-3---Portfolio?node-id=1-3&t=o9FNocdry4Bemam8-1"
+            ],
+            "linksDescription": [
+                "Maquette"
+            ]
+        },
+        "description": "Ce projet avait pour but de créer une maquette interactive avec Figma d'un exemple de portfolio, en utilisant l'auto-layout, la mise en place de composants réutilisables ainsi que l'intégration de quelques interactions sur la maquette.",
+        "date": "Mai 2025",
+        "images": {
+            "cover":"https://i.ibb.co/0R8JzkmV/Capture-d-cran-2025-05-23-141915.png",
+            "pictures": [
+                "https://i.ibb.co/0R8JzkmV/Capture-d-cran-2025-05-23-141915.png",
+                "https://i.ibb.co/1tX06B2B/Capture-d-cran-2025-05-23-142205.png",
+                "https://i.ibb.co/N6WzDtwP/Capture-d-cran-2025-05-23-142231.png"
+            ]
+        }
+    },
+    {
+        "name": "Maquettage d'un site",
+        "tags": [
+            "Figma"
+        ],
+        "annex":{
+            "links":[
+                "https://www.figma.com/design/7XODivIE85gPHjlhTvKdwC/Atelier-4---Dribbble?node-id=0-1&t=BNBpm25ctq7ymNiE-1"
+            ],
+            "linksDescription": [
+                "Maquette"
+            ]
+        },
+        "description": "Ce projet avait pour but de créer une maquette interactive avec Figma à partir d'une page d'accueil d'un site web existant (ici 'Dribbble'), en utilisant l'auto-layout, la mise en place de composants réutilisables ainsi que l'intégration de quelques interactions sur la maquette.",
+        "date": "Mai 2025",
+        "images": {
+            "cover":"https://i.ibb.co/kVWY9tpB/Capture-d-cran-2025-05-23-141337.png",
+            "pictures": [
+                "https://i.ibb.co/kVWY9tpB/Capture-d-cran-2025-05-23-141337.png",
+                "https://i.ibb.co/ycdQ9nbr/Capture-d-cran-2025-05-23-140108.png",
+                "https://i.ibb.co/VWjNCxb0/Capture-d-cran-2025-05-23-140046.png"
+                
+            ]
+        }
+    },
+    {
         "name": "Booki",
         "tags": [
             "HTML",
@@ -13,7 +62,6 @@
                 "Github"
             ]
         },
-        "links":"https://github.com/JhodyLagarde/OC-Projet2-Booki",
         "description": "Le but de ce projet était de créer la page d'accueil d'une agence de voyage static avec HTML & CSS. Pour la mise en situation, l’entreprise 'Booki' souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. Je suis donc ici chargé d'intégrer l'interface du site avec du code HTML et CSS de manière responsive. J'ai en ma disposition une base de code, une note de synthése pour l'integration du site ainsi qu'une maquette figma du design attendu.",
         "date": "Mars 2024",
         "images": {
