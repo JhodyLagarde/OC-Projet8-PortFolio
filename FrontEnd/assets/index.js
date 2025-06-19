@@ -132,6 +132,7 @@ function modalContent(event) {
         const aModalAnnex = document.createElement('a');
         aModalAnnex.href = annexLink[i];
         aModalAnnex.innerText = annexLinkDescription[i];
+        aModalAnnex.setAttribute('target', '_blank');
         modalAnnex.appendChild(aModalAnnex);
     }
 
